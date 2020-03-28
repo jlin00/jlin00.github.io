@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Python Pandas</title>
+  </head>
+  <body>
+    <h1>Python Pandas</h1>
+    By: Jackie Lin and Peihua Huang (Team Har Gow Siu Mai)
+    <br>
+    <br>
+    <h2>What is Python Pandas?</h2>
+    <ul>
+      <li>Software library written for Python</li>
+      <li>Used for data manipulation and analysis</li>
+      <li>Offers data structures and operations for manipulating tables</li>
+      <li>Free, open-source, fast and easy-to-use</li>
+    </ul>
+    <br>
+    <br>
+    <h2>What type of data does pandas handle?</h2>
+    <ul>
+      <li>Designed to make working with <b>relational</b> or <b>labeled</b> data easy and intuitive; well-suited for:
+        <ul>
+          <li>Tabular data with heterogeneously-typed columns (SQL, Excel)</li>
+          <li>Ordered and unordered time series data</li>
+          <li>Arbitrary matrix data with row and column labels</li>
+          <li>Other observational/statistical datasets</li>
+        </ul>
+      </li>
+      <li>Data does not need to be labeled at all to be placed into a pandas data structure</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Benefits of using pandas</h2>
+    <ul>
+      <li>Easy handling of missing data (represented as <b>NaN</b>)</li>
+      <li>Size mutability: columns can easily be inserted or deleted</li>
+      <li>Powerful <b>group by</b> functionality that allows easy aggregation and transformation of datasets</li>
+      <li>Easy to convert Python and NumPy data structures into pandas data structures</li>
+      <li>Intelligent label-based slicing, indexing, and subsetting of large datasets</li>
+      <li>Intuitive merging and joining of datasets</li>
+      <li>Robust IO tools for loading data from CSV files, Excel, databases...etc.</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Data Structures in pandas</h2>
+    <ul>
+      <li>There are two types of data structures in pandas:
+        <ul>
+          <li><b>Series</b>: 1D labeled homogeneously-typed array (like a column in SQLite)</li>
+          <li><b>DataFrames</b>: 2D labeled tabular structure (like a table in SQLite)
+            <ul>
+              <li>Easy to add/drop Series</li>
+              <li>Can be created from:
+                <ul>
+                  <li>Dict of Series/lists</li>
+                  <li>List of dicts</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <h2>Reading and writing  data in pandas</h2>
+    <ul>
+      <li>pandas makes it easy to import and export csv, excel, sql, and other file formats/data sources
+        <ul>
+          <li><u>Note</u>: some files (such as excel) require additional modules</li>
+        </ul>
+      </li>
+      <li><b>read_*()</b> - read in the data and place it in a DataFrame</li>
+      <li><b>to_*()</b> - exports the DataFrame to the specified file format</li>
+      <li><b>info()</b> - provides technical data about a DataFrame
+        <ul>
+          <li>Includes row/column count, labels, type of data contained in entry (<b>dtype</b>)</li>
+        </ul>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <h2>Rummaging Through DataFrames</h2>
+    <ul>
+      <li><b>df.head(n)</b> / <b>df.tail(n)</b> -- returns the first/last n (5 if n is not specified) rows of the DataFrame</li>
+      <li><b>df[col]</b> / <b>df.[[col1, col2,...]]</b> -- returns one or more columns from the DataFrame</li>
+      <li><b>df[cond]</b> -- returns all the rows that meet the conditional statement</li>
+      <li><b>df.loc[row, col]</b> -- returns the specified rows and columns based on their names</li>
+      <li><b>df.iloc[row, col]</b> -- returns the specified rows and columns based on index positions</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Modifying DataFrames</h2>
+    <ul>
+
+    </ul>
+  </body>
+</html>
