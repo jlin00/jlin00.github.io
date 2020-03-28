@@ -106,5 +106,49 @@
       <li><b>Series.str.contains(substr)</b> -- checks if each of the value in the Series contains the substring, returning a column of Trues and Falses</li>
       <li><b>Series.str.replace(original, new)</b> -- replaces the original string with the new string</li>
     </ul>
+    <br>
+    <br>
+    <h2>Calculating Summary Statistics</h2>
+    <ul>
+      <li><b>df.describe()</b> -- calculate aggregating statistics for columns
+        <ul>
+          <li>dividual statistics can also be calculated for columns using functions such as <b>df.mean()</b> or <b>df.median()</b></li>
+        </ul>
+      </li>
+      <li><b>df.agg(func)</b> -- allows for specific aggregations of statistics to be defined for given columns</li>
+      <li>Aggregating statistics can also be grouped by category
+        <ul>
+          <li>These types of operations  are supported by the <b>groupby()</b> function, which follows the <b>split-apply-combine</b> pattern</li>
+        </ul>
+      </li>
+      <li><b>Series.value_counts()</b> -- counts records for each category in column</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Combining Data from Multiple Tables</h2>
+    <ul>
+      <li><b>pd.concat([table1, table2...], axis)</b> -- performs concatenation operation on multiple tables along one of the axis (row or column)</li>
+      <li><b>pd.merge(table1, table2, how, on)</b> -- used for database-like merging and joining of tables</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Try our instructional demo!</h2>
+    <ul>
+      <li>If you are looking to explore pandas on your own, get started at the following link:
+        <ul>
+          <li>https://pandas.pydata.org/docs/getting_started/install.html</li>
+          <li>Inside your python file, you should include the following line at the top:
+            <ul>
+              <li><b>import pandas as pd</b></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>You can also try exploring out instructional code demo, which you can find at the following link (instructions provided in README file):
+        <ul>
+          <li>https://github.com/phuang00/pandas</li>
+        </ul>
+      </li>
+    </ul>
   </body>
 </html>
