@@ -93,7 +93,18 @@
     <br>
     <h2>Modifying DataFrames</h2>
     <ul>
-
+      <li><b>df[new_name]</b> -- creates a new column with the given name</li>
+      <li><b>df.pop(col)</b> -- drops the column from the DataFrame and returns the dropped column</li>
+      <li><b>df.rename(index=index_mapper, columns=columns_mapper, ...)</b> -- rename row labels or column names using the mappers</li>
+    </ul>
+    <br>
+    <br>
+    <h2>Manipulating Textual Data</h2>
+    <ul>
+      <li><b>Series.str.lower()</b> -- turns all characters in the series to lowercase</li>
+      <li><b>Series.str.split(delimiter)</b> -- split the values in the column at the specified delimiter string</li>
+      <li><b>Series.str.contains(substr)</b> -- checks if each of the value in the Series contains the substring, returning a column of Trues and Falses</li>
+      <li><b>Series.str.replace(original, new)</b> -- replaces the original string with the new string</li>
     </ul>
   </body>
 </html>
